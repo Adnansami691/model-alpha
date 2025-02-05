@@ -23,4 +23,53 @@ int main() {
     default: printf("not a valid day! \n");
         break;
     }
+
+
+
+
+    int number;
+    printf("enter number :");
+    scanf("%d", &number);
+
+    if (number >= 0) {
+        printf("positive \n");
+        if(number % 2 == 0) {
+            printf("even \n");
+        } else {
+            printf("odd \n");
+        }
+    } else {
+        printf("Negetive \n");
+        if (number % 2 == 0) {
+            printf("even \n");
+    } else {
+        printf("odd \n");
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    int marks;
+    printf("enter marks: ");
+    scanf("%d", &marks);
+    if (marks >= 0 && marks < 30 ) {
+        printf("C \n");
+    } else if ( marks >= 0 && marks >= 30 && marks < 70) {
+        printf("B");
+    } else if (marks >= 0 && marks >= 70 && marks < 90 ) {
+        printf("A");
+    } else if (marks >= 0 && marks >= 90 && marks <= 100) {
+        printf("A+");
+    } else {
+        printf("Wrong Input!!");
+    }
+    return 0;
 }
